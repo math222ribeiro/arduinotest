@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
-    res.send('An alligator approaches!');
+    res.send('<An alligator approaches!>');
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
