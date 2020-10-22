@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
     res.send('{' + message + '}');
 });
 
+app.get('/message', (req, res) => { 
+    message = req.query.message;
+});
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
