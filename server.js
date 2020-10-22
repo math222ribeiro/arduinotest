@@ -4,11 +4,11 @@ const PORT = process.env.PORT || 5000
 
 let message = "Hello World"
 
-app.get('/', (req, res) => {
+app.get('/receive', (req, res) => {
     res.send('{' + message + '}');
 });
 
-app.get('/send', (req, res) => { 
+app.get('/sendgabi', (req, res) => { 
     message = req.query.message;
 	res.send(message);
 });
